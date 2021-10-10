@@ -72,12 +72,11 @@ def maize_upload():
     if request.method == 'POST':
         # Get the file from post request
         f = request.files['file']
-
         if f is None:
-		st.text("Please upload an image file")
+            st.text("Please upload an image file")
         else:
-            	image = Image.open(f)
-            	st.image(image, use_column_width=True)
+            image = Image.open(f)
+            st.image(image, use_column_width=True)
         # Model saved with Keras model.save()
         MODEL_PATH = 'models/maize model.h5'
 
@@ -102,10 +101,10 @@ def rice_upload():
         f = request.files['file']
 
         if f is None:
-		st.text("Please upload an image file")
+            st.text("Please upload an image file")
         else:
-            	image = Image.open(f)
-            	st.image(image, use_column_width=True)
+            image = Image.open(f)
+            st.image(image, use_column_width=True)
         # Model saved with Keras model.save()
         MODEL_PATH = 'models/rice model.h5'
 
@@ -130,10 +129,10 @@ def riceD_upload():
         f = request.files['file']
 
         if f is None:
-		st.text("Please upload an image file")
+            st.text("Please upload an image file")
         else:
-            	image = Image.open(f)
-            	st.image(image, use_column_width=True)
+            image = Image.open(f)
+            st.image(image, use_column_width=True)
         # Model saved with Keras model.save()
         MODEL_PATH = 'models/Rice disease.h5'
 
