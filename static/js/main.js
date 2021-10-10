@@ -51,7 +51,7 @@ $(document).ready(function () {
             success: function (data) {
                 // Get and display the result
                 $('.loader').hide();
-                $('#result').fadeIn(600);
+                $('#result').fadeIn(200);
                 $('#result').text(' Result:  ' + data);
                 console.log('Success!');
             },
