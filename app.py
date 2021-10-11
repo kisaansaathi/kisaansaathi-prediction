@@ -38,16 +38,6 @@ import streamlit as st
 # Define a flask app
 app = Flask(__name__)
 
-# Model saved with Keras model.save()
-MODEL_PATH = 'models/maize model.h5'
-
-# Load your trained model
-model = load_model(MODEL_PATH)
-
-# print('Model loaded. Start serving...')
-
-#print('Model loaded. Check http://127.0.0.1:5000/')
-
 
 def model_predict(img_data, model):
     size=(224,224)
