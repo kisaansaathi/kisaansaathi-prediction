@@ -41,7 +41,7 @@ $(document).ready(function () {
 
         // Make prediction by calling api /predict
         $.ajax({
-            type: 'POST',
+            type: 'GET',
             url: url,
             data: form_data,
             contentType: false,
@@ -51,7 +51,7 @@ $(document).ready(function () {
             success: function (data) {
                 // Get and display the result
                 $('.loader1').hide();
-                $('#result1').fadeIn(300);
+                $('#result1').fadeIn(600);
                 $('#result1').text(' Result:  ' + data);
                 console.log('Success!');
             },
