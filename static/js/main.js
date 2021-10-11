@@ -42,7 +42,7 @@ $(document).ready(function () {
 
         // Make prediction by calling api /predict
         $.ajax({
-            type: 'GET',
+            type: 'POST',
             url: url,
             data: form_data,
             contentType: false,
