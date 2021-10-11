@@ -41,7 +41,7 @@ $(document).ready(function () {
         $('.loader').show();
 
         // Make prediction by calling api /predict
-        $.ajax{
+        $.ajax({
             type: 'POST',
             url: url,
             data: form_data,
