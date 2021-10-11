@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // Init
-    $('.image-section').hide();
-    $('.loader').hide();
+    $('.image-section1').hide();
+    $('.loader1').hide();
     $('#result1').hide();
 
     // Upload Preview
@@ -17,7 +17,7 @@ $(document).ready(function () {
         }
     }
     $("#imageUpload1").change(function () {
-        $('.image-section').show();
+        $('.image-section1').show();
         $('#btn-predict1').fadeIn();
         $('#result1').text('');
         $('#result1').hide();
@@ -37,7 +37,7 @@ $(document).ready(function () {
           url= '/rice_disease';
         }
         $(this).hide();
-        $('.loader').show();
+        $('.loader1').show();
 
         // Make prediction by calling api /predict
         $.ajax({
@@ -50,7 +50,7 @@ $(document).ready(function () {
             async: true,
             success: function (data) {
                 // Get and display the result
-                $('.loader').hide();
+                $('.loader1').hide();
                 $('#result1').fadeIn(300);
                 $('#result1').text(' Result:  ' + data);
                 console.log('Success!');
