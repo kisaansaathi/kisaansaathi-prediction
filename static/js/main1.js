@@ -1,43 +1,43 @@
 $(document).ready(function () {
     // Init
-    $('.image-section1').hide();
-    $('.loader1').hide();
-    $('#result1').hide();
+    $('.image-section').hide();
+    $('.loader').hide();
+    $('#result').hide();
 
     // Upload Preview
     function readURL(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function (e) {
-                $('#imagePreview1').css('background-image', 'url(' + e.target.result + ')');
-                $('#imagePreview1').hide();
-                $('#imagePreview1').fadeIn(650);
+                $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                $('#imagePreview').hide();
+                $('#imagePreview').fadeIn(650);
             }
             reader.readAsDataURL(input.files[0]);
         }
     }
-    $("#imageUpload1").change(function () {
-        $('.image-section1').show();
-        $('#btn-predict1').fadeIn();
-        $('#result1').text('');
-        $('#result1').hide();
+    $("#imageUpload").change(function () {
+        $('.image-section').show();
+        $('#btn-predict').fadeIn();
+        $('#result').text('');
+        $('#result').hide();
         readURL(this);
     });
 
     // Predict
-    $('#btn-predict1').click(function () {
-        var form_data = new FormData($('#upload-file1')[0]);
-        var cropName = $('#crop-choose1').find(":selected").text();
+    $('#btn-predict').click(function () {
+        var form_data = new FormData($('#upload-file')[0]);
+        var cropName = $('#crop-choose').find(":selected").text();
         var url='';
         // Show loading animation
-        if(cropName=="मक्का"){
-          url= '/maize_disease';
+        if(cropName=="Maize"){
+          url= '/maize_predict';
         }
-        if(cropName=="चावल"){
-          url= '/rice_disease';
+        if(cropName=="Rice"){
+          url= '/rice_predict';
         }
         $(this).hide();
-        $('.loader1').show();
+        $('.loader').show();
 
         // Make prediction by calling api /predict
         $.ajax({
@@ -50,9 +50,9 @@ $(document).ready(function () {
             async: true,
             success: function (data) {
                 // Get and display the result
-                $('.loader1').hide();
-                $('#result1').fadeIn(600);
-                $('#result1').text(' Result:  ' + data);
+                $('.loader').hide();
+                $('#result').fadeIn(600);
+                $('#result').text(' Result:  ' + data);
                 console.log('Success!');
             },
         });
