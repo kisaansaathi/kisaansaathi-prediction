@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 
     // Predict
-    $('#btn-predict').click(function () {
+    $('#btn-predict1').click(function () {
         var form_data = new FormData($('#upload-file1')[0]);
         var cropName = $('#crop-choose1').find(":selected").text();
         var url='';
