@@ -31,10 +31,10 @@ $(document).ready(function () {
         var url='';
         // Show loading animation
         if(cropName=="मक्का"){
-          url= '/maize_predict';
+          url= '/maize_disease';
         }
         if(cropName=="चावल"){
-          url= '/rice_predict';
+          url= '/rice_disease';
         }
         $(this).hide();
         $('.loader1').show();
