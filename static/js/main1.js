@@ -30,10 +30,10 @@ $(document).ready(function () {
         var cropName = $('#crop-choose1').find(":selected").text();
         var url='';
         // Show loading animation
-        if(cropName=="Maize"){
+        if(cropName=="मक्का"){
           url= '/maize_disease';
         }
-        if(cropName=="Rice"){
+        if(cropName=="चावल"){
           url= '/rice_disease';
         }
         $(this).hide();
