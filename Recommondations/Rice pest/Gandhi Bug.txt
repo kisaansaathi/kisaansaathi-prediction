@@ -1,0 +1,11 @@
+<br><br><h3 style="color:#FF0000;">गन्धी कीट (Gandhi Bug )</h3> <br><h3 style="color:#8D2828;">वैज्ञानिक नाम :</h3><br><h3 style="color:#FF0000;">लेप्टोकोरिसा एक्यूटा (Leptocourisa acuta)</h3>
+
+
+<h2 style="color:#440047"><i class="fa fa-user-md" style="font-size:36px;color:#440047;"></i><b> प्रबंधन (Management):</b></h2><br>
+<div class="container-sm" style="border: 5px outset #ED50F1;border-radius: 10px;box-shadow: 3px 3px 3px 3px grey;margin-top: 10px;margin-bottom: 10px;">
+	<br><h4 style="color:#1C7947">1)  खेत की मेड़ों पर खरपतवार को न उगने दें क्योंकि खरपतवार इस कीट के लिए वैकल्पिक पौधों की भूमिका निभाते हैं।</h4>
+
+	<br><h4 style="color:#1C7947">2)  खेत मे प्रकाश प्रपंच (लाईटट्रप) प्रति हेक्टेयर का प्रयोग करें ताकि वयस्क कीट को पकड़ा जा सके।</h4>
+
+	<br><h4 style="color:#1C7947">3) इस कीट की संख्या 2 कीट प्रति हिल दिखाई पड़ने पर क्यूनालफॉस 1.5 डी.पी. प्रति 25-30 किलोग्राम का बुरकाव सुबह या शाम को करें।</h4>
+</div>
