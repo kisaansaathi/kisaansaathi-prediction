@@ -52,7 +52,7 @@ $(document).ready(function () {
                 // Get and display the result
                 $('.loader').hide();
                 $('#result').fadeIn(300);
-                $('#result').html('Result:  ' + data');
+                $('#result').html('Result:  ' + data);
                 console.log('Success!');
             },
         });
