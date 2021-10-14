@@ -4,8 +4,40 @@ import numpy as np
 import codecs
 import textract
 
-with open('Recommondations/fall army worm.txt', encoding='utf-8') as f:
-    input1 = f.read()
+with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    mp1 = f.read()
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #mp2 = f.read()
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #mp3 = f.read()
+with open('Recommondations/maize pest/maize stem borer.txt', encoding='utf-8') as f:
+    mp4 = f.read()
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #mp5 = f.read()
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #mp1 = f.read()
+
+
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #rp1 = f.read()
+with open('Recommondations/Rice pest/Brown Plant hopper.txt', encoding='utf-8') as f:
+    rp2 = f.read()
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #rp3 = f.read()
+with open('Recommondations/Rice pest/Gandhi Bug.txt', encoding='utf-8') as f:
+    rp4 = f.read()
+with open('Recommondations/Rice pest/Green Hopper.txt', encoding='utf-8') as f:
+    rp5 = f.read()
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #rp6 = f.read()
+with open('Recommondations/Rice pest/leaf folder.txt', encoding='utf-8') as f:
+    rp7 = f.read()
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #rp8 = f.read()
+#with open('Recommondations/maize pest/fall army worm.txt', encoding='utf-8') as f:
+    #rp9 = f.read()
+with open('Recommondations/Rice pest/stem borer.txt', encoding='utf-8') as f:
+    rp10 = f.read()
 #print(input1)
 
 #with open('D:/M.Tech/S.Y/DP3/diseases/marathi2.txt', encoding='utf-8') as f:
@@ -13,9 +45,6 @@ with open('Recommondations/fall army worm.txt', encoding='utf-8') as f:
 
 #with open('D:/M.Tech/S.Y/DP3/diseases/marathi3.txt', encoding='utf-8') as f:
     #input3 = f.read()
-
-with open('Recommondations/maize stem borer.txt', encoding='utf-8') as f:
-    input4 = f.read()
 
 #with open('D:/M.Tech/S.Y/DP3/diseases/marathi5.txt', encoding='utf-8') as f:
     #input5 = f.read()
@@ -78,7 +107,7 @@ def maize_upload():
 	
 	
 
-        pest_list=['फॉल आर्मी वर्म','ग्रीन स्टिंक बग','मक्का बेधक','तना छेदक','गुलाबी तना बेधक (Pink Stem Corer)', 'स्पोडोप्टेरा लिटुरा','अपलोड की गई छवि डेटासेट पर उपलब्ध नहीं है', 'स्वस्थ मकई का पत्ता, अगर प्रभावित हिस्सा है तो फिर से तस्वीर अपलोड करें']    
+        pest_list=[mp1,'<h3 style="color:red;">ग्रीन स्टिंक बग</h3>','<h3 style="color:red;">मक्का बेधक</h3>',mp4,'<h3 style="color:red;">गुलाबी तना बेधक (Pink Stem Corer)</h3>', '<h3 style="color:red;">स्पोडोप्टेरा लिटुरा</h3>','अपलोड की गई छवि डेटासेट पर उपलब्ध नहीं है', '<h3 style="color:green;">स्वस्थ मकई का पत्ता, अगर प्रभावित हिस्सा है तो फिर से तस्वीर अपलोड करें</h3>']    
 
         result = pest_list[int(preds)]
         return result
@@ -106,7 +135,7 @@ def rice_upload():
 	
 	
 
-        pest_list=['बीट वेबवर्म','ब्राउन प्लांट हूपर','यूबलम्मा','गांधी बग','हरा हूपर','हॉर्न कैटरपिलर','लीफ फोल्डर','राइस मील्यबग','राइस स्किपर','स्टेम बोरर','येलो टेल मोत','अपलोड की गई छवि डेटासेट पर उपलब्ध नहीं है', 'स्वस्थ चावल का पत्, अगर प्रभावित हिस्सा है तो फिर से तस्वीर अपलोड करे']    
+        pest_list=['<h3 style="color:red;">बीट वेबवर्म </h3>',rp2,'<h3 style="color:red;">यूबलम्मा </h3>',rp4,rp5,'<h3 style="color:red;">हॉर्न कैटरपिलर</h3>',rp7,'<h3 style="color:red;">राइस मील्यबग</h3>','<h3 style="color:red;">राइस स्किपर</h3>',rp10,'<h3 style="color:red;">येलो टेल मोत</h3>','अपलोड की गई तस्वीर डेटासेट पर उपलब्ध नहीं है', '<h3 style="color:green;">स्वस्थ चावल का पत्, अगर प्रभावित हिस्सा है तो फिर से तस्वीर अपलोड करे</h3>']    
 
         result = pest_list[int(preds)]
         return result
@@ -134,7 +163,7 @@ def riceD_upload():
 	
 	
 
-        disease_list=['बैक्टीरियल ब्लाइट','बैक्टीरियल लीफ स्ट्रीक','ब्राउन लीफ स्पॉट','फॉल्स स्मुट','राइस ब्लास्ट रोग','शेअथ ब्लाईट ऑफ राइस','शेअथ रोट ऑफ राइस','अपलोड की गई छवि डेटासेट पर उपलब्ध नहीं है', 'स्वस्थ चावल का पत्, अगर प्रभावित हिस्सा है तो फिर से तस्वीर अपलोड करें']    
+        disease_list=['<h3 style="color:red;">बैक्टीरियल ब्लाइट</h3>','<h3 style="color:red;">बैक्टीरियल लीफ स्ट्रीक</h3>','<h3 style="color:red;">ब्राउन लीफ स्पॉट</h3>','<h3 style="color:red;">फॉल्स स्मुट</h3>','<h3 style="color:red;">राइस ब्लास्ट रोग</h3>','<h3 style="color:red;">शेअथ ब्लाईट ऑफ राइस</h3>','<h3 style="color:red;">शेअथ रोट ऑफ राइस</h3>','अपलोड की गई छवि डेटासेट पर उपलब्ध नहीं है', '<h3 style="color:green;">स्वस्थ चावल का पत्, अगर प्रभावित हिस्सा है तो फिर से तस्वीर अपलोड करें</h3>']    
 
         result = disease_list[int(preds)]
         return result
