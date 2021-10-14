@@ -30,10 +30,10 @@ $(document).ready(function () {
         var cropName = $('#crop-choose1').find(":selected").text();
         var url='';
         // Show loading animation
-        if(cropName=="मक्का"){
+        if(cropName=="Maize"){
           url= '/maize_disease';
         }
-        if(cropName=="चावल"){
+        if(cropName=="Rice"){
           url= '/rice_disease';
         }
         $(this).hide();
@@ -52,7 +52,7 @@ $(document).ready(function () {
                 // Get and display the result
                 $('.loader').hide();
                 $('#result1').fadeIn(300);
-                $('#result1').html('Result:  ' + data);
+                $('#result1').text(' Result:  ' + data);
                 console.log('Success!');
             },
         });
