@@ -30,10 +30,10 @@ $(document).ready(function () {
         var cropName = $('#crop-choose').find(":selected").text();
         var url='';
         // Show loading animation
-        if(cropName=="मक्का"){
+        if(cropName=="Maize"){
           url= '/maize_predict';
         }
-        if(cropName=="चावल"){
+        if(cropName=="Rice"){
           url= '/rice_predict';
         }
         $(this).hide();
@@ -51,8 +51,9 @@ $(document).ready(function () {
             success: function (data) {
                 // Get and display the result
                 $('.loader').hide();
-                $('#result').fadeIn(300);
-                $('#result').html('Result:  ' + data);
+                $('#result').fadeIn(600);
+                //$('#result').text(' Result:  ' + data);
+                $('#result').html(' Result:  ' + data);
                 console.log('Success!');
             },
         });
