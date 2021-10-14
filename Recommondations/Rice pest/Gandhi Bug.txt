@@ -1,4 +1,4 @@
-<br><br><h3 style="color:#FF0000;">गन्धी कीट (Gandhi Bug )</h3> <br><h3 style="color:#8D2828;">वैज्ञानिक नाम :</h3><br><h3 style="color:#FF0000;">लेप्टोकोरिसा एक्यूटा (Leptocourisa acuta)</h3>
+<br><br><h3 style="color:#FF0000;">गन्धी कीट (Gandhi Bug )</h3> <br><h3 style="color:#8D2828;">वैज्ञानिक नाम :</h3><br><h3 style="color:#FF0000;">लेप्टोकोरिसा एक्यूटा (Leptocourisa acuta)</h3><br>
 
 
 <h2 style="color:#440047"><i class="fa fa-user-md" style="font-size:36px;color:#440047;"></i><b> प्रबंधन (Management):</b></h2><br>
