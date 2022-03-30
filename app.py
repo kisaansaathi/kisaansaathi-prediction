@@ -141,34 +141,6 @@ def rice_upload():
         return result
     return None
 
-@app.route('/rice_disease', methods=['GET', 'POST'])
-def riceD_upload():
-    if request.method == 'POST':
-        # Get the file from post request
-        f = request.files['file']
-
-        if f is None:
-            st.text("Please upload an image file")
-        else:
-            image = Image.open(f)
-            st.image(image, use_column_width=True)
-        # Model saved with Keras model.save()
-        MODEL_PATH = 'models/Rice disease.h5'
-
-        # Load your trained model
-        model = load_model(MODEL_PATH)
-
-        # Make prediction
-        preds = model_predict(image, model) # call prediction function
-	
-	
-
-        disease_list=['<h3 style="color:red;">बैक्टीरियल ब्लाइट</h3>','<h3 style="color:red;">बैक्टीरियल लीफ स्ट्रीक</h3>','<h3 style="color:red;">ब्राउन लीफ स्पॉट</h3>','<h3 style="color:red;">फॉल्स स्मुट</h3>','<h3 style="color:red;">राइस ब्लास्ट रोग</h3>','<h3 style="color:red;">शेअथ ब्लाईट ऑफ राइस</h3>','<h3 style="color:red;">शेअथ रोट ऑफ राइस </h3>','अपलोड की गई छवि डेटासेट पर उपलब्ध नहीं है', '<h3 style="color:green;">स्वस्थ चावल का पत्, अगर प्रभावित हिस्सा है तो फिर से तस्वीर अपलोड करें</h3>']    
-
-        result = disease_list[int(preds)]
-        return result
-    return None
-
 if __name__ == '__main__':
     
     app.run(debug=True)
